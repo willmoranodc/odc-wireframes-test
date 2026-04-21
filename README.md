@@ -1,6 +1,6 @@
 # [Client Name] — Project Repo
 
-This is a new client project built from the R4 client template. Every client gets their own repo following this same structure, so anyone on the team can move between projects without relearning where things live.
+This is a new client project. Every client gets their own repo following this same structure, so anyone on the team can move between projects without relearning where things live.
 
 ## What goes in this repo
 
@@ -26,19 +26,19 @@ Everything file-based for this client: research, strategy docs, design system no
 
 Claude gets context from two places when working on this project:
 
-1. **Global skills** — general-purpose capabilities and process logic that apply to every R4 project. These live in the team's global skills library, not in this repo.
+1. **Global skills** — general-purpose capabilities and process logic that apply to every project. These live in the team's global skills library, not in this repo.
 2. **Project-level skills and context** — client-specific conventions, voice and tone, design system rules, and gotchas. These live in `CLAUDE.md` and `.agent/skills/` in this repo.
 
 When you open this repo in Cursor and start a Claude session, it will automatically pick up `CLAUDE.md`. Each phase (research → strategy → design) passes its outputs forward as context for the next phase, which is why we keep everything in one repo.
 
 ## Branching and review
 
-Nothing reaches `main` without a pull request approved by Will.
+Nothing reaches `main` without a pull request approved by the project lead.
 
 - `main` is the source of truth. It is protected — you can't push to it directly.
 - For any piece of work, create a branch off `main`. Name it after what you're doing: `research/stakeholder-interviews`, `design/homepage-wireframes`, `prototype/auth-flow`.
 - Commit as you go. Push your branch. Open a pull request on GitHub when you're ready for review.
-- Will reviews and merges.
+- The project lead reviews and merges.
 
 This applies to everyone — researcher, designers, writers, guest collaborators. The PR is the universal review gate regardless of whether the work is a Figma update pushed via Code Connect, a research synthesis document, or prototype code.
 
