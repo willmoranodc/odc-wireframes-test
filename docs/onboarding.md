@@ -1,7 +1,5 @@
 # Onboarding: Getting set up with Cursor + GitHub
 
-Test edit for pull request.
-
 Welcome. This guide walks you through everything you need to work on a client project, assuming you've never used Git or GitHub before. Take it slow — the first-time setup is about 20 minutes, but after that you'll rarely think about it again.
 
 By the end of this guide, you'll be able to:
