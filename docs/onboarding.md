@@ -1,6 +1,6 @@
 # Onboarding: Getting set up with Cursor + GitHub
 
-Welcome. This guide walks you through everything you need to work on an R4 client project, assuming you've never used Git or GitHub before. Take it slow — the first-time setup is about 20 minutes, but after that you'll rarely think about it again.
+Welcome. This guide walks you through everything you need to work on a client project, assuming you've never used Git or GitHub before. Take it slow — the first-time setup is about 20 minutes, but after that you'll rarely think about it again.
 
 By the end of this guide, you'll be able to:
 
@@ -62,7 +62,7 @@ Back in Terminal, run these two commands, replacing the name and email with your
 
 ```
 git config --global user.name "Your Name"
-git config --global user.email "your.email@r4.com"
+git config --global user.email "your.email@onedesigncompany.com"
 ```
 
 You're done with setup.
@@ -75,8 +75,8 @@ Every time a new client project starts, you'll need to download a copy of the re
 
 1. In Cursor, open the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`).
 2. Type `Git: Clone` and press Enter.
-3. Paste the repo URL (Will or the project lead will share it) and press Enter.
-4. Choose where on your computer to save it. **Important:** pick a folder that is NOT inside Google Drive, Dropbox, iCloud, or any other sync service. Those tools interfere with Git. A folder like `~/Projects/` or `Documents/R4/` on your main drive is perfect.
+3. Paste the repo URL (the project lead or PM will share it) and press Enter.
+4. Choose where on your computer to save it. **Important:** pick a folder that is NOT inside Google Drive, Dropbox, iCloud, or any other sync service. Those tools interfere with Git. A folder like `~/Projects/` or `Documents/project-name/` on your main drive is perfect.
 5. When it finishes, Cursor will ask if you want to open the folder. Say yes.
 
 You now have the whole project on your computer. The first thing to read is the `README.md` file in the root of the repo — it tells you how that specific client's work is organized.
@@ -119,7 +119,7 @@ A "commit" is a snapshot of your work. You can make as many as you want. A good 
 1. Open the Source Control panel (`Ctrl/Cmd+Shift+G`).
 2. You'll see a list of changed files. Hover over each one and click the `+` icon to "stage" it. (Or click the `+` next to "Changes" to stage everything.)
 3. Type a short message in the box at the top describing what you did. Examples:
-   - `Add draft interview guide for Win Trust stakeholders`
+   - `Add draft interview guide for Wintrust stakeholders`
    - `Update homepage wireframe with new nav pattern`
 4. Click the **Commit** button (checkmark icon).
 
@@ -131,15 +131,15 @@ In the Source Control panel, click the `...` menu and choose **Push**. The first
 
 ### Step 5: Open a pull request
 
-Once your work is ready for Will to review:
+Once your work is ready for the project lead to review:
 
 1. Go to the repo on github.com (or click the GitHub icon in Cursor's sidebar if it's available).
 2. You'll see a yellow banner offering to open a pull request from your branch. Click it.
 3. Write a short description of what you did and why. Bullet points are fine.
-4. Assign Will as the reviewer.
+4. Assign the project lead as the reviewer.
 5. Click **Create pull request**.
 
-Will gets notified, reviews your work, and either leaves comments for revision or merges it into `main`. If he asks for changes, make them on the same branch, commit, and push again — the pull request updates automatically.
+The project lead gets notified, reviews your work, and either leaves comments for revision or merges it into `main`. If he asks for changes, make them on the same branch, commit, and push again — the pull request updates automatically.
 
 ---
 
@@ -158,7 +158,7 @@ You won't. Git's whole purpose is to make it safe to experiment. Nothing you do 
 The Source Control panel shows every changed file. Click on any file name in that panel to see a side-by-side diff of what changed. Review before you commit.
 
 **"I need to undo a change."**
-In the Source Control panel, hover over the changed file and click the curved-arrow "Discard Changes" icon. This only works for changes you haven't committed yet. For committed changes, ask Will or post in Slack — it's recoverable but the steps depend on the situation.
+In the Source Control panel, hover over the changed file and click the curved-arrow "Discard Changes" icon. This only works for changes you haven't committed yet. For committed changes, ask the project lead or post in Slack — it's recoverable but the steps depend on the situation.
 
 ---
 
@@ -169,12 +169,12 @@ A few things worth knowing:
 - Claude automatically reads the `CLAUDE.md` file in the repo when you start a session. That file has the client-specific context — voice, tone, design conventions, things to avoid. You don't need to paste context in every time.
 - If you notice Claude making the same mistake twice, tell it to add a note to `CLAUDE.md` so it remembers for next time.
 - Treat the `.agent/skills/` folder as the place where project-specific workflows live. If you develop a repeatable process for this client (e.g., a specific way to structure interview synthesis), ask Claude to save it as a skill there.
-- Work on your branch applies to Claude-generated files too. If Claude writes a file, commit it, push it, and let Will review via PR — same as any other work.
+- Work on your branch applies to Claude-generated files too. If Claude writes a file, commit it, push it, and let the project lead review via PR — same as any other work.
 
 ---
 
 ## Getting help
 
-If anything goes sideways, post in the `#ai-workflow` Slack channel with a screenshot and a description of what you were trying to do. Don't keep clicking things hoping it'll fix itself — Git is recoverable from almost anything if you stop and ask.
+If anything goes sideways, post in the `#digital-practice` Slack channel with a screenshot and a description of what you were trying to do. Don't keep clicking things hoping it'll fix itself — Git is recoverable from almost anything if you stop and ask.
 
 Welcome to the workflow.
