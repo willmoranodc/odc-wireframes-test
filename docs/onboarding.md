@@ -20,7 +20,7 @@ Before we install anything, a quick vocabulary check:
 - **A repository** (or "repo") is just a folder of project files that Git is tracking. Each of our clients has one.
 - **Cursor** is the app we use to open and edit files. It has Git and Claude built in, so most of the time you won't need to touch the command line.
 - **A branch** is your own private copy of the project where you can make changes without affecting anyone else's work. You'll make a new branch every time you start something new.
-- **A pull request** (or "PR") is how you ask Will to review your work and merge it into the main project.
+- **A pull request** (or "PR") is how you ask the project lead to review your work and merge it into the main project.
 
 If anything below doesn't make sense, ask in Slack — don't guess.
 
@@ -48,7 +48,7 @@ On Windows, download Git from [git-scm.com](https://git-scm.com) and accept all 
 
 ### Step 3: Make a GitHub account
 
-Go to [github.com](https://github.com) and sign up if you don't already have an account. Use your work email. Once you have an account, send your GitHub username to Will so he can add you to the team.
+Go to [github.com](https://github.com) and sign up if you don't already have an account. Use your work email. Once you have an account, send your GitHub username to the project lead so they can add you to the team.
 
 ### Step 4: Sign into GitHub from Cursor
 
